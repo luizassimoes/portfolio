@@ -14,43 +14,6 @@
   }
 }
 
-@media screen and (min-width: 773px) {
-
-  .navbar-items {
-    display: flex;
-    flex-direction: row-end;
-    width: 50vw;
-  }
-
-  #welcome-section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row-reverse;}
-
-  #myphoto {
-    margin-left: 50px;
-}
-
-}
-
-@media screen and (max-width: 772px) {
-  .navbar-items {
-    display: flex;
-    flex-direction: row-end;
-    width: 100vw;
-  }
-  #welcome-section {
-    display: grid;
-    flex-direction: row-reverse;
-  }
-  #myphoto {  
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-  
-}
 
 @keyframes slideLeft {
   0% {
@@ -136,7 +99,6 @@ nav {
 
 .coverer {
   height: 80px;
-  background-color: red;
 }
 
 #welcome-section {
@@ -246,8 +208,8 @@ a {
 }
 
 footer {
-  scroll-margin-top: 90px;
   display: flex;
+  scroll-margin-top: 90px;
   flex-direction: column;
   align-items: center;
   width: 100vw;
@@ -256,8 +218,6 @@ footer {
 }
 
 .footer-container {
-  display: flex;
-  gap: 60px;
   align-items: center;
 }
 
@@ -281,17 +241,7 @@ footer h1 {
 
 footer i, footer p {
   font-size: 1.8rem;
-  margin-bottom: 20px;
   padding: 5px;
-}
-
-.footer-box:hover {
-  background-color: var(--luiza-c2);
-  border-radius: 10px 10px 0 0;
-}
-
-footer p {
-  padding-bottom: 23px;
 }
 
 i.fab {
@@ -300,4 +250,69 @@ i.fab {
 
 i.fas {
   font-size: 2.7rem;
+}
+
+
+
+@media screen and (min-width: 773px) {
+
+  .navbar-items {
+    display: flex;
+    flex-direction: row-end;
+    width: 50vw;
+  }
+
+  #welcome-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;}
+
+  #myphoto {
+    margin-left: 50px;
+  }
+
+  .footer-container { 
+    display: flex;
+    gap: 60px;
+  }
+
+  footer p {
+    padding-bottom: 23px;
+  }
+
+  footer i, footer p {
+    margin-bottom: 20px;
+  }
+
+  .footer-box:hover {
+    background-color: var(--luiza-c2);
+    border-radius: 10px 10px 0 0;
+  }
+  
+
+}
+
+@media screen and (max-width: 772px) {
+  .navbar-items {
+    display: flex;
+    flex-direction: row-end;
+    width: 100vw;
+  }
+  #welcome-section {
+    display: grid;
+    flex-direction: row-reverse;
+  }
+  #myphoto {  
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .footer-container { 
+    display: grid;
+  }
+  .footer-box:hover {
+    background-color: var(--luiza-c2);
+    border-radius: 10px 10px 10px 10px;
+  }
 }
