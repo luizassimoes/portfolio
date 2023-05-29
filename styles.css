@@ -1,11 +1,11 @@
 :root {
-  --luiza-c1: #B2A4FF;
-  --luiza-c2: #FFB4B4;
-  --luiza-c3: #FFDEB4;
-  --luiza-c4: #FDF7C3;
-  --luiza-c5: #CCF6C8;
-  --luiza-c6: #faf7de;
-  --luiza-cfont: #111;
+  --luiza-c1: #a4adff; /* #B2A4FF */
+  --luiza-c2: #FF9494; /* #FFB4B4 */
+  --luiza-c3: #FFDEB4; /* #FFDEB4 */
+  --luiza-c4: #fff8e8; /* #FDF7C3 */
+  --luiza-c5: #CCF6C8; /* #CCF6C8 */
+  --luiza-c6: #faf7de; /* #faf7de */
+  --luiza-cfont: #111; /* #111 */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -61,7 +61,6 @@ body {
 
 nav {
   background-color: var(--luiza-c1);
-  color: var(--luiza-c4);
   position: fixed;
   width: 100vw;
   display: flex;
@@ -119,7 +118,7 @@ nav {
 }
 
 #welcome-section p {
-  font-size: 2.4rem;
+  font-size: 2.0rem;
   padding: 30px;
   padding-top: 0;
   color: var(--luiza-cfont);
@@ -188,7 +187,7 @@ a {
 }
 
 .frame {
-  background-color: var(--luiza-c2);
+  background-color: var(--luiza-c1);
   display: grid;
   justify-content: center;
   align-content: center;
@@ -197,8 +196,9 @@ a {
 }
 
 .frame:hover {
-  background: linear-gradient(45deg, var(--luiza-c1), 
-  var(--luiza-c2), var(--luiza-c1));
+  /* background: linear-gradient(45deg, var(--luiza-c1), 
+  var(--luiza-c2), var(--luiza-c1)); */
+  background-color: var(--luiza-c2);
 }
 
 .frame p {
@@ -268,6 +268,10 @@ i.fas {
     display: flex;
     flex-direction: row-reverse;}
 
+  #welcome-section p {
+      width: 40vw;
+  }
+
   #myphoto {
     margin-left: 50px;
   }
@@ -289,7 +293,7 @@ i.fas {
     background-color: var(--luiza-c2);
     border-radius: 10px 10px 0 0;
   }
-  
+
 
 }
 
