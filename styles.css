@@ -125,6 +125,10 @@ nav {
   animation: slideRight 1s ease-in-out;
 }
 
+.bg-color {
+  background-color: var(--luiza-c1);
+}
+
 #myphoto {
   margin-bottom: 0;
   border: solid 5px var(--luiza-c1);
